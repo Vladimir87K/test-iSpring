@@ -1,0 +1,112 @@
+@import url(font.scss);
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 1200px;
+  position: relative;
+}
+.header-logo {
+  margin-right: 32px;
+  position: absolute;
+  left: 0;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 154px;
+}
+.header__nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.header__nav-content li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  line-height: 22px;
+  margin-right: 27px;
+}
+.header__nav-content li a:hover {
+  color: rgba(4, 14, 151, 0.9);
+}
+.header__nav-content li a span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid #676E78;
+  border-left: 1px solid #676E78;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 5px 5px;
+}
+.header__nav-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header__nav-user li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  line-height: 22px;
+  margin-right: 18px;
+}
+.header__nav-user li a:hover {
+  color: rgba(4, 14, 151, 0.9);
+}
+.header__nav-user li a span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid #676E78;
+  border-left: 1px solid #676E78;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 5px 5px;
+}
+
+.hr {
+  border-bottom: 1px solid #DDE0E5;
+  margin: 0;
+  width: 100%;
+}
