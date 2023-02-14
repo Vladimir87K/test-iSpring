@@ -1,6 +1,7 @@
 @import url(font.scss);
 body {
   margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +29,13 @@ body {
           align-items: center;
   min-width: 1200px;
   position: relative;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid #DDE0E5;
+  width: 100vw;
 }
 .header-logo {
   margin-right: 32px;
@@ -59,7 +67,7 @@ body {
 }
 .header__nav-content li a {
   text-decoration: none;
-  color: #000;
+  color: #151824;
   font-size: 15px;
   line-height: 22px;
   margin-right: 27px;
@@ -86,7 +94,7 @@ body {
 }
 .header__nav-user li a {
   text-decoration: none;
-  color: #000;
+  color: #151824;
   font-size: 15px;
   line-height: 22px;
   margin-right: 18px;
@@ -105,8 +113,87 @@ body {
   margin: 5px 5px;
 }
 
-.hr {
-  border-bottom: 1px solid #DDE0E5;
+.invite {
+  margin-top: 84px;
+  border-radius: 30px;
+  background-color: #3D50F9;
+  color: #fff;
+  padding: 115px 100px;
+  position: relative;
+}
+.invite__paragraph {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
   margin: 0;
-  width: 100%;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.invite__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  width: 60%;
+}
+.invite__subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
+  width: 50%;
+}
+.invite__button {
+  width: 225px;
+  height: 55px;
+  border-radius: 100px;
+  background-color: #FFC960;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.invite__decoration {
+  width: 456px;
+  height: 456px;
+  background-image: url(/images/Work_group.png);
+  position: absolute;
+  right: 100px;
+  top: 66px;
+}
+.invite__decoration-orange {
+  width: 102px;
+  height: 102px;
+  border-radius: 35%;
+  background-color: #FF7449;
+  background-image: url(/images/graph.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  -webkit-transform: rotate(11deg);
+          transform: rotate(11deg);
+  position: absolute;
+  top: 285px;
+  right: 380px;
+}
+.invite__decoration-white {
+  width: 102px;
+  height: 102px;
+  border-radius: 35%;
+  background-color: #fff;
+  background-image: url(/images/Handshake.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  -webkit-transform: rotate(-19deg);
+          transform: rotate(-19deg);
+  position: absolute;
+  right: 0;
+  top: 35px;
 }
